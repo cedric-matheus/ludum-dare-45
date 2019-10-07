@@ -1,0 +1,9 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details or
+// https://aka.ms/vscode-dev-containers/definitions for sample configurations.
+{
+  "dockerComposeFile": "docker-compose.dev.yml",
+  "service": "ludum-dare-45",
+  "workspaceFolder": "/ludum-dare-45",
+  "extensions": ["editorconfig.editorconfig", "esbenp.prettier-vscode"],
+  "shutdownAction": "stopCompose"
+}

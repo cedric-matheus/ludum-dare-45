@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  ludum-dare-45:
+    container_name: ludum-dare-45
+    image: node:lts
+    volumes:
+      - ./:/ludum-dare-45
+    working_dir: /ludum-dare-45
+    ports:
+      - 80:80
+    tty: true
