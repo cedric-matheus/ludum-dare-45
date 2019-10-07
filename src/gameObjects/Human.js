@@ -39,14 +39,11 @@ class Human extends Phaser.GameObjects.Sprite {
   }
 
   stop() {
-    // stop animations array
-    const stopAnimations = [`${this.imageKey}Stop`];
-
     // clear velocity of human
     this.body.setVelocity(0, 0);
 
     // play animation
-    this.play(stopAnimations[randomAnimationNumber]);
+    this.play(`${this.imageKey}Stop`);
   }
 
   moveUp() {
